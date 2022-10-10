@@ -1,0 +1,629 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Main Styling */
+html,
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+h2 {
+	font-size: 2rem;
+}
+h3 {
+	font-size: 1.75rem;
+}
+h4 {
+	font-size: 1.5rem;
+}
+h5 {
+	font-size: 1.25rem;
+}
+h6 {
+	font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+p {
+	font-size: 1rem;
+	margin: 10px 0;
+	line-height: 1.7em;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+
+.container {
+	margin: auto;
+	max-width: 1300px;
+	overflow: auto;
+	padding: 0 20px;
+}
+
+.large {
+	font-size: 1.25rem;
+}
+
+.display-1 {
+	font-size: 6rem;
+}
+
+.btn {
+	display: inline-block;
+	font-size: 15px;
+	padding: 12px 23px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	border-radius: 4px;
+}
+
+.btn-dark {
+	background: #4d4d4d;
+	border: none;
+	color: #fff;
+}
+
+.btn-dark:hover {
+	background: #fff;
+	border: 1px solid #4d4d4d;
+	color: #4d4d4d;
+}
+
+/* Navbar */
+header img{
+    max-width: 200px;
+    margin: auto;
+    display: block;
+}
+header h1{
+    text-align: center;
+}
+.color-acento{
+    color: #ABD774;
+}
+nav{
+    width: 100%;
+    height: 50px;
+    border-radius: .7rem;
+    background-color: #ABD774;
+    border-top: 1px solid rgba(255, 255, 255,.2);
+    border-bottom: 1px solid rgba(255, 255, 255,.2);
+    position: sticky;
+    top: 0;
+}
+nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0 70px;
+    float: right;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    display: block;
+    color: #000;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 50px;
+    font-size: 1em;
+    
+}
+nav a:hover{
+    background-color: #ceecaa;
+    border-radius: 1rem;
+}
+nav img {
+    position: relative;
+    top: -10%;
+}
+
+/* Showcase */
+#showcase {
+	height: 80vh;
+	background: #f8f9fa;
+	padding: 150px 0;
+}
+
+#showcase h1 {
+	line-height: 1em;
+}
+
+#showcase .title-outline {
+	color: #fff;
+	-webkit-text-stroke: 3px #000;
+}
+
+.showcase-row {
+	display: flex;
+}
+
+.showcase-row-title {
+	padding-top: 70px;
+}
+
+.showcase-row-image {
+	display: block;
+	margin: 0 auto;
+}
+
+.showcase-row-image img {
+	height: 500px;
+}
+
+/* apicultura */
+@media (min-width: 850px){
+    .apicultura-row-image{
+        background-image: url(/img/apicul1.jpg);
+        background-size: cover;
+        background-position: center center;
+        margin: auto;
+        height: 500px;
+        width: 1000px; 
+        text-align: center;
+        transition: all 0.25s;
+        border-radius: 10px;
+    }
+    .apicultura-row-image:hover{
+        transform: translateY(-15px);
+        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.3);
+    }
+}
+#apicultura {
+    margin: 4%;
+
+	background: #f8f9fa;
+	padding: 90px 0;
+    box-shadow: 1px solid rgba(0, 0, 0, .4);
+}
+
+#apicultura h2 {
+	padding-bottom: 50px;
+}
+.apicultura-row-image img{
+    min-width: 600;
+
+}
+.contenedor{
+    max-width: 100%;
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+.contenedor .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .4);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, .3);
+}
+.container .card img{
+    width: 330px;
+    height: 220px;
+}
+.container .card h4{
+    font-weight: 600;
+}
+.container .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+/* especies */
+#especies {
+    margin: 4%;
+	padding: 90px 0;
+    
+}
+
+#especies h2 {
+	padding-bottom: 50px;
+}
+.galeria{
+    margin: 10px 20px;
+    box-shadow: 0 4px 8px 0 rgba(6, 34, 41, 0.849);
+    float: left;
+    width: 350px;
+}
+
+.galeria img{
+    width: 100%;
+    height: auto;
+    line-height: 0;
+}
+.galeria:hover{
+    border: 0px solid rgba(0, 0, 0, 0.1);
+    
+}
+.texto-card h2{
+    text-align: center;
+    text-shadow: 2px 2px 3px blue;
+    padding: 3px;
+}
+
+.texto-card h5{
+    text-align: center;
+}
+.galeria .texto-card p{
+    padding: 0 1rem;
+    font-size: 12px;
+}
+
+/* ganaderia */
+#ganaderia {
+	padding: 90px 0;
+	background: #f8f9fa;
+}
+
+#ganaderia h2 {
+	padding-bottom: 20px;
+}
+
+.ganaderia-row {
+	display: flex;
+	padding-bottom: 40px;
+}
+
+.ganaderia-row-tag {
+	width: 50%;
+	text-align: right;
+	padding-right: 80px;
+}
+
+.ganaderia-row-tag p span {
+	background: #c4c4c4;
+	color: #fff;
+	padding: 12px 30px;
+	border-radius: 20px;
+}
+/*BIOTECNOLOGIA*/
+#biotec {
+	background: #f8f9fa;
+	padding: 90px 0;
+}
+
+#biotec h2 {
+	padding-bottom: 50px;
+}
+
+.biotec-row {
+	display: flex;
+}
+
+.biotec-row-image img {
+	height: 500px;
+	padding-right: 90px;
+}
+
+#biotec hr {
+	width: 60%;
+	margin-bottom: 30px;
+}
+
+/* videos */
+#videos {
+	padding: 90px 0;
+	background: #f8f9fa;
+}
+
+#videos h2 {
+	padding-bottom: 50px;
+}
+
+.videos-row {
+	display: flex;
+}
+
+.videos-row-box {
+	margin: 20px;
+	background: #fff;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.videos-row-box img {
+	width: 100%;
+    left: 10%;
+}
+
+.videos-row-box p {
+	text-align: center;
+	padding: 20px;
+	margin-top: 0;
+}
+
+/*OBJETIVOS*/
+.content2 {
+    position: relative;
+    margin: 5%;
+    height: 80vh;
+}
+#obje
+{   
+
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;   
+}
+#obje #img_bx {
+    position: relative;
+    left: 35%;
+}
+
+#obje h1 {
+    text-align: center;
+    font-size: 20px;
+}
+#obje p {
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+}
+
+.objetivos
+{
+    color: #000;
+    margin: 10px;
+}
+
+
+.somos
+{
+
+    margin: 10px;
+}
+.somos {
+    color: #000;
+}
+
+.mapa
+{
+    margin: 10px;
+}
+
+
+/* Footer */
+#sec {
+    height: 340px;
+    background-color: #ABD774;
+}
+
+#pie {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: -60px;
+    width: 750px;
+    height: 320px;
+    background-color: #fff;
+    border-radius: 15px;
+    filter: drop-shadow(5px 10px 15px rgba(6, 34, 41, 0.849));
+}
+.datos {
+    
+    font-family: 'Poppins', sans-serif;
+}
+
+  
+@media screen and (max-width: 900px) {
+    #sec {
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 767px) {
+    #sec {
+        width: 100%;
+    }
+    #pie {
+        width: 90%;
+    }
+    .redes a {
+        position: relative;
+        top: -25px;
+    }
+    
+}
+@media screen and (max-width: 762px) {
+    #sec {
+        width: 100%;
+    }
+    #pie {
+        width: 90%;
+    }
+    .datos h1 {
+        color: black;
+        font-size: 25px;
+
+    }
+    .datos  {
+        font-size: 14px;
+
+    }
+    #pie .foo_img  {
+        margin-left: 80%;
+    }
+    .redes a {
+        position: relative;
+        top: -30px;
+    }
+    
+}
+@media screen and (max-width: 691px) {
+    #sec {
+        width: 100%;
+    }
+    #pie {
+        width: 90%;
+    }
+    .datos h1 {
+        color: black;
+        font-size: 25px;
+
+    }
+    .datos  {
+        font-size: 14px;
+
+    }
+    
+    .redes a {
+        position: relative;
+        top: -15px;
+    }
+    
+}
+
+
+@media screen and (max-width: 597px) {
+    #sec {
+        width: 100%;
+    }
+    #pie {
+        width: 90%;
+    }
+    .datos h1 {
+        color: black;
+        font-size: 22px;
+
+    }
+	#pie .foo_img {
+		margin-left: 75%;
+
+	}
+    .datos  {
+        font-size: 14px;
+
+    }
+    .redes a {
+        position: relative;
+        top: -25px;
+    }
+    
+}
+@media screen and (max-width: 508px) {
+    #sec {
+        width: 100%;
+    }
+    #pie {
+        width: 90%;
+    }
+    .datos h1 {
+        color: black;
+        font-size: 22px;
+
+    }
+	#pie .foo_img {
+		margin-left: 75%;
+
+	}
+    .datos p {
+        font-size: 15px;
+
+    }
+    .redes a {
+        position: relative;
+        top: -25px;
+    }
+    
+}
+@media screen and (max-width: 472px) {
+    #sec {
+        width: 100%;
+    }
+    #pie {
+        width: 90%;
+    }
+    .datos h1 {
+        color: black;
+        font-size: 22px;
+
+    }
+	#pie .foo_img {
+		margin-left: 70%;
+
+	}
+    .datos p {
+        font-size: 14px;
+
+    }
+    .redes a {
+        position: relative;
+        top: -10px;
+    }
+    
+}
+
+@media screen and (max-width: 450px) {
+    #sec {
+        max-width: 100%;
+    }
+    #pie {
+        width: 90%;
+    }
+    .datos h1 {
+        color: black;
+        font-size: 22px;
+
+    }
+    .datos  {
+        font-size: 14px;
+
+    }
+    .redes a {
+        position: relative;
+        top: -25px;
+    }
+    
+}
+
+.foo_img {
+    position: relative;
+    margin-left: 80%;
+    top: 20px;
+}
+.datos {
+    position: relative;
+    top: -60px;
+    margin-left: 25px;
+}
+.datos h1 {
+	font-size: 25px;
+	text-align: center;
+}
+.redes {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    top: -80px;
+    margin: 20px;
+
+}
